@@ -22,8 +22,8 @@ public class CoinDefinition {
         public static final String alternateExchangeInfo = "http://www.frankos.org/coin_api.php?coin_id=33";
 
 
-        public static final String BLOCKEXPLORER_BASE_URL_PROD = "http://frk.cryptocoinexplorer.com/";
-        public static final String BLOCKEXPLORER_BASE_URL_TEST = "http://frk.cryptocoinexplorer.com/";
+        public static final String BLOCKEXPLORER_BASE_URL_PROD = "https://coinplorer.com/FRK/";
+        public static final String BLOCKEXPLORER_BASE_URL_TEST = "https://coinplorer.com/FRK/";
 
         public static final String DONATION_ADDRESS = "F85ytB5qH87aHskpauQi6YWdRZPQgNubX4";  //HashEngineering donation FRK address
 
@@ -82,12 +82,33 @@ public class CoinDefinition {
 
         //net.cpp strDNSSeed
         static public String[] dnsSeeds = new String[] {
-                "dnsseed.frankos.org", // US-EAST
-                "tokyo.briefcaseit.com", //JAPAN,TOKYO
+                //"dnsseed.frankos.org", // US-EAST
+                //"tokyo.briefcaseit.com", //JAPAN,TOKYO
                 //"dnsseed.copiamarket.com", //US
                 //"frk.dencoinpools.com",//US
-                "54.217.71.192",// == crypto-knight - bloom filters ON
-                "54.193.7.225" //== frankopedia  - bloom filters ON
+                //"54.217.71.192",// == crypto-knight - bloom filters ON
+                //"54.193.7.225", //== frankopedia  - bloom filters ON
+                //"24.127.122.120",
+                //"209.95.36.136"
+                "63.246.129.56",
+                "24.176.222.222",
+                "213.136.68.97",
+                "46.105.158.193",
+                "184.4.59.2",
+                "71.192.130.60",
+    /*addnode=64.34.49.151:7912
+    addnode=198.101.10.109:7912
+    addnode=54.201.183.106:7912
+    addnode=173.88.4.157
+    addnode=79.165.190.244
+    addnode=192.99.13.205
+    addnode=195.130.216.149
+    addnode=204.11.237.246:6491
+    addnode=37.59.52.171:2409
+    addnode=98.165.106.124
+    addnode=83.11.19.246
+    addnode=173.176.161.97
+    */
 
         };
 
@@ -162,5 +183,8 @@ public class CoinDefinition {
             checkpoints.put( 402376, new Sha256Hash("41f33e89e8369d88e1a516a4860fb0c1b4b8b5037f28388a9fd062e4966258f6"));
             checkpoints.put( 472665, new Sha256Hash("7b532f4e96384b2de42f73803572ae5a2bfbecf19462cf2c9f754e7421498ba0"));
             checkpoints.put( 605904, new Sha256Hash("97a0618b8971a7627eb30f3346245af28fe43e32af117b915132b8c0efb1c1f9"));
+            checkpoints.put( 785863, new Sha256Hash("9ea053de310cc64a14c9b48849f9ed1e5b5898b30696f3d935b40047feb2306b"));
+            checkpoints.put( 785950, new Sha256Hash("1ea42eb64c0a5027549e58d2b532e4fe5da6c901b723fd2ae2d4b7263807e8da"));
+            checkpoints.put( 786082, new Sha256Hash("980e5394dee86c2d12572cff87d74b260e2e37c2ef321118cf5a7b68f15188ea"));
         }
 }
