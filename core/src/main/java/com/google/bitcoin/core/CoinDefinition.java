@@ -1,9 +1,7 @@
 package com.google.bitcoin.core;
 
 import java.math.BigInteger;
-import java.util.Date;
 import java.util.Map;
-import java.util.Vector;
 
 /**
  * Created with IntelliJ IDEA.
@@ -82,6 +80,8 @@ public class CoinDefinition {
 
         //net.cpp strDNSSeed
         static public String[] dnsSeeds = new String[] {
+                "www.dirtydiggers.org",
+                "seed.frankos.org",
                 //"dnsseed.frankos.org", // US-EAST
                 //"tokyo.briefcaseit.com", //JAPAN,TOKYO
                 //"dnsseed.copiamarket.com", //US
